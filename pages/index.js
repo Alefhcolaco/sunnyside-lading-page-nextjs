@@ -50,7 +50,7 @@ export default function Home() {
         <div className='flex flex-row-reverse'>
           <div className='w-width-cards h-height-cards grow p-[180px]'>
             <h2 className='text-[50px] w-[510px] leading-[58px] pb-[38px]'>Stand out to the right <br />audience</h2>
-            <p className='text-gray-dark pb-[56px] w-[483px] leading-[30px]'>Using a collaborative formula of designers, researchers,<br /> photographers, videographers, and copywriters, we'll<br /> build and extend your brand in digital places.</p>
+            <p className='text-gray-dark pb-[56px] w-[483px] leading-[30px]'>Using a collaborative formula of designers, researchers,<br /> photographers, videographers, and copywriters, we ll<br /> build and extend your brand in digital places.</p>
             <button className='hover:border-b-8 border-[#FA7769] border-solid'>LEARN MORE</button>
           </div>
           <div className='bg-stand w-width-cards h-height-cards bg-cover grow'>
@@ -63,7 +63,7 @@ export default function Home() {
               <div className='m-0 m-auto block w-[320px] mb-[25px]'>
                 <h2 className='w-[320px] text-center text-[40px]'>Graphic Design</h2>
               </div>
-              <p>Great design makes you memorable. We deliver<br /> artwork that underscores your brand message<br /> and captures potential clients' attention.</p>
+              <p>Great design makes you memorable. We deliver<br /> artwork that underscores your brand message<br /> and captures potential clients attention.</p>
             </div>
           </div>
           <div className='bg-photography w-width-cards h-height-cards bg-cover grow'>
@@ -94,7 +94,7 @@ export default function Home() {
           <div className=' mb-[45px] h-[80px] '>
               <Image className='rounded-full' src={Avatar2} width={80} height={80} />
             </div>
-            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Sunnyside's enthusiasm coupled with their<br /> keen interest in our brand's success made it<br /> a satisfying and enjoyable experience.</p>
+            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Sunnyside s enthusiasm coupled with their<br /> keen interest in our brand s success made it<br /> a satisfying and enjoyable experience.</p>
             <span className='text-dark-blue'>Thomas S.</span>
             <h3 className='relative top-[5px] text-gray'>Chief Operating Officer</h3>
           </div>
