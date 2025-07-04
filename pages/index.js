@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Image from 'next/image'
 import Logo from '/public/logo.svg'
 import Arrow from '/public/icon-arrow-down.svg'
@@ -28,8 +27,8 @@ export default function Home() {
             </ul>
           </nav>
         </header>
-        <div className='m-0 m-auto block w-h1 h-16 relative top-[100px]'>
-          <h1 className="tracking-[.26em] text-white text-[56px]">WE ARE CREATIVES</h1>
+        <div className='m-0 m-auto block w-full h-16 relative top-[100px]'>
+          <h1 className="tracking-[.16em] text-white text-[100px] text-center">WE ARE CREATIVES</h1>
         </div>
         <div className='block m-0 m-auto w-[50px] relative top-[290px]'>
           <Image src={Arrow} width={50} height={158} />
@@ -38,20 +37,20 @@ export default function Home() {
       <section>
         {/*SECTION TRANSFORM */}
         <div id="section1" className='flex'>
-          <div className='w-width-cards h-height-cards grow p-[180px]'>
-            <h2 className='text-[50px] leading-[58px] pb-[38px]'>Transform your <br />brand</h2>
-            <p className='text-gray-dark pb-[56px] w-[483px] leading-[30px]'>We are a full-service creative agency specializing in<br /> helping brands grow fast. Engage your clients through<br /> compelling visuals that do most of the marketing for you.</p>
-            <button className='hover:border-b-8 border-[#F4D403] border-solid'>LEARN MORE</button>
+          <div className='w-width-cards h-height-cards grow flex flex-col justify-center pl-[50px]'>
+            <h2 className='text-[50px] leading-[58px] pb-[15px] w-[400px]'>Transform your brand</h2>
+            <p className='text-gray-dark pb-[40px] w-[483px] leading-[30px]'>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <button className='w-[150px]'>LEARN MORE</button>
           </div>
           <div className='bg-transform w-width-cards h-height-cards bg-cover grow'>
           </div>
         </div>
         {/*SECTION STAND */}
         <div className='flex flex-row-reverse'>
-          <div className='w-width-cards h-height-cards grow p-[180px]'>
-            <h2 className='text-[50px] w-[510px] leading-[58px] pb-[38px]'>Stand out to the right <br />audience</h2>
-            <p className='text-gray-dark pb-[56px] w-[483px] leading-[30px]'>Using a collaborative formula of designers, researchers,<br /> photographers, videographers, and copywriters, we ll<br /> build and extend your brand in digital places.</p>
-            <button className='hover:border-b-8 border-[#FA7769] border-solid'>LEARN MORE</button>
+          <div className='w-width-cards h-height-cards grow flex flex-col justify-center pl-[50px]'>
+            <h2 className='text-[50px] w-[510px] leading-[58px] pb-[15px]'>Stand out to the right audience</h2>
+            <p className='text-gray-dark pb-[40px] w-[483px] leading-[30px]'>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, well build and extend your brand in digital places.</p>
+            <button className='w-[150px]'>LEARN MORE</button>
           </div>
           <div className='bg-stand w-width-cards h-height-cards bg-cover grow'>
           </div>
@@ -63,7 +62,7 @@ export default function Home() {
               <div className='m-0 m-auto block w-[320px] mb-[25px]'>
                 <h2 className='w-[320px] text-center text-[40px]'>Graphic Design</h2>
               </div>
-              <p>Great design makes you memorable. We deliver<br /> artwork that underscores your brand message<br /> and captures potential clients attention.</p>
+              <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients attention.</p>
             </div>
           </div>
           <div className='bg-photography w-width-cards h-height-cards bg-cover grow'>
@@ -71,7 +70,7 @@ export default function Home() {
               <div className='m-0 m-auto block w-[260px] mb-[25px]'>
                 <h2 className='w-[260px] text-center text-[40px]'>Photography</h2>
               </div>
-              <p>Increase your credibility by getting the most<br /> stunning, high-quality photos that improve your<br /> business image.</p>
+              <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
             </div>
           </div>
         </div>
@@ -82,27 +81,27 @@ export default function Home() {
           <h2 className='tracking-[0.24em] text-gray w-[500px] mb-24 mt-173 text-xl whitespace-nowrap'>CLIENT TESTIMONIALS</h2>
         </div>
         <div className='flex block m-0 m-auto w-1200 gap-10'>
-          <div className=' text-center w-width-clients h-height-clients'>
-            <div className=' mb-[45px] h-[80px] '>
+          <div className='text-center w-width-clients h-height-clients'>
+            <div className='mb-[45px] h-[80px] '>
               <Image className='rounded-full' src={Avatar1} width={80} height={80} />
             </div>
-            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>We put our trust in Sunnyside and they<br /> delivered, making sure our needs were met<br /> and deadlines were always hiy.</p>
+            <p className='mb-[65px] text-[19px] leading-7 text-[#616264]'>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hiy.</p>
             <span className='text-dark-blue'>Emily R.</span>
             <h3 className='relative top-[5px] text-gray'>Marketing Director</h3>
           </div>
           <div className='text-center w-width-clients h-height-clients '>
-          <div className=' mb-[45px] h-[80px] '>
+          <div className=' mb-[45px] h-[80px]'>
               <Image className='rounded-full' src={Avatar2} width={80} height={80} />
             </div>
-            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Sunnyside s enthusiasm coupled with their<br /> keen interest in our brand s success made it<br /> a satisfying and enjoyable experience.</p>
+            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Sunnyside s enthusiasm coupled with their keen interest in our brand s success made it a satisfying and enjoyable experience.</p>
             <span className='text-dark-blue'>Thomas S.</span>
             <h3 className='relative top-[5px] text-gray'>Chief Operating Officer</h3>
           </div>
           <div className='text-center w-width-clients h-height-clients'>
-          <div className=' mb-[45px] h-[80px] '>
+          <div className=' mb-[45px] h-[80px]'>
               <Image className='rounded-full' src={Avatar3} width={80} height={80} />
             </div>
-            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Incredible end result! Our sales increased<br /> over 400% when we worked with Sunnyside.<br /> Highly recommended!</p>
+            <p className=' mb-[65px] text-[19px] leading-7 text-[#616264]'>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
             <span className='text-dark-blue'>Jennie F.</span>
             <h3 className='relative top-[5px] text-gray'>Business Owner</h3>
           </div>
